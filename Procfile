@@ -1,1 +1,1 @@
-gunicorn branching_cycle.main:app
+web: gunicorn branching_cycle.main:app
