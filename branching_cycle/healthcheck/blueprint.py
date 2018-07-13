@@ -1,6 +1,6 @@
 """Deals with Blueprint-related stuff."""
 from flask import Blueprint
-from app.healthcheck import healthcheck
+from branching_cycle.healthcheck import healthcheck
 
 def create_blueprint():
     """Creates a Blueprint"""

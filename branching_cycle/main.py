@@ -5,7 +5,7 @@ Starts the Flask application
 """
 from flask import Flask
 
-from app.healthcheck import blueprint as health_check_blueprint
+from branching_cycle.healthcheck import blueprint as health_check_blueprint
 
 # pylint: disable=C0103
 app = Flask(__name__)
