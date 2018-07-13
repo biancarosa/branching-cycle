@@ -20,6 +20,7 @@ itsdangerous = "==0.24"
 markupsafe = "==1.0"
 werkzeug = "==0.12.2"
 gunicorn = "*"
+pymongo = "*"
 
 
 [requires]
