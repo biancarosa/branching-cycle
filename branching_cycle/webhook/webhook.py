@@ -17,7 +17,7 @@ def git_webhook():
         "date": datetime.utcnow()
     }
     log.info("Content Received - ", request.headers['X-GitHub-Delivery'])
-    inserted_id = client.events.insert_one(content).inserted_id)
+    inserted_id = client.events.insert_one(content).inserted_id
     log.info("Content Inserted - ", inserted_id)
     return jsonify({
         "message": "Okay!"
