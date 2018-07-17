@@ -1,6 +1,6 @@
 """Deals with WebHook route."""
 import os
-from datetime import date
+from datetime import datetime
 
 from flask import jsonify, request
 from pymongo import MongoClient
@@ -15,7 +15,7 @@ def git_webhook():
     content = {
         "event": request.headers['X-GitHub-Event'],
         "payload" : request.json,
-        "date": datetime.datetime.utcnow()
+        "date": datetime.utcnow()
     }
     log.info(content)
     log.info("Content Inserted - ", database.events.insert_one(content).inserted_id)
